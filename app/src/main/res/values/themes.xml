@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Base.Theme.Shop" parent="Theme.Material3.DayNight.NoActionBar"/>
+    <style name="Theme.MyApplication" parent="Base.Theme.Shop">
+        <item name="android:windowTranslucentNavigation">true</item>
+    </style>
+</resources>
