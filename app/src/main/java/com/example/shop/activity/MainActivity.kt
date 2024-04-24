@@ -1,19 +1,20 @@
 package com.example.shop.activity
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import androidx.lifecycle.Observer
+import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import androidx.viewpager2.widget.CompositePageTransformer
 import androidx.viewpager2.widget.MarginPageTransformer
+import com.example.shop.Adapter.BrandAdapter
 import com.example.shop.Model.SliderModel
-import com.example.shop.R
-import com.example.shop.SliderAdapter
+import com.example.shop.Adapter.SliderAdapter
+import com.example.shop.Model.BrandModel
 import com.example.shop.ViewModel.MainViewModel
 import com.example.shop.databinding.ActivityMainBinding
 
-class MainActivity : AppCompatActivity() {
+class MainActivity : BaseActivity() {
     private val viewModel= MainViewModel()
     private lateinit var binding: ActivityMainBinding
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -22,6 +23,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         initBanner()
+        initBrand()
     }
 
     private fun initBanner() {
@@ -47,6 +49,15 @@ class MainActivity : AppCompatActivity() {
             binding.dotIndicator.attachTo(binding.viewpagerSlider)
         }
     }
-
+    private fun initBrand(){
+        binding.progressBarBrand.visibility= View.VISIBLE
+        viewModel.brands.observe ( this, Observer{
+            binding.viewBrand.layoutManager =
+                LinearLayoutManager(this@MainActivity, LinearLayoutManager.HORIZONTAL,false)
+            binding.viewBrand.adapter = BrandAdapter(it)
+            binding.progressBarBrand.visibility = View.GONE
+        })
+        viewModel.loadBrand()
+    }
 }
 
