@@ -43,6 +43,7 @@ class MainActivity : BaseActivity() {
         binding.viewpagerSlider.clipChildren = false
         binding.viewpagerSlider.offscreenPageLimit = 3
         binding.viewpagerSlider.getChildAt(0).overScrollMode = RecyclerView.OVER_SCROLL_NEVER
+
         val compositePageTransformer= CompositePageTransformer().apply {
             addTransformer (MarginPageTransformer ( 40))
         }
