@@ -3,4 +3,5 @@
     <string name="intro_title">Создайте свой стиль\n <font color="#6033ba">  Мир обуви</font></string>
     <string name="intro_text">Просмотрите последние модели от ведущих брендов\n Получите персонализированные рекомендации\n Наслаждайтесь быстрой и бесплатной доставкой</string>
     <string name="intro_sign">Уже есть аккаунт? <font color="#6033ba"> Войти</font></string>
+    <string name="intro_login">Ещё нет аккаунта? <font color="#6033ba"> Регистрация</font></string>
 </resources>

@@ -1,33 +1,14 @@
 {
   "project_info": {
-    "project_number": "624962053621",
-    "firebase_url": "https://my-application-4abe4-default-rtdb.asia-southeast1.firebasedatabase.app",
-    "project_id": "my-application-4abe4",
-    "storage_bucket": "my-application-4abe4.appspot.com"
+    "project_number": "303246847248",
+    "firebase_url": "https://shop-ea9f3-default-rtdb.europe-west1.firebasedatabase.app",
+    "project_id": "shop-ea9f3",
+    "storage_bucket": "shop-ea9f3.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:624962053621:android:60391c839170c5d8422cbc",
-        "android_client_info": {
-          "package_name": "com.example.myapplication"
-        }
-      },
-      "oauth_client": [],
-      "api_key": [
-        {
-          "current_key": "AIzaSyBMe6BcWqJaaAfxr57_MaaXFzqMdVClP4c"
-        }
-      ],
-      "services": {
-        "appinvite_service": {
-          "other_platform_oauth_client": []
-        }
-      }
-    },
-    {
-      "client_info": {
-        "mobilesdk_app_id": "1:624962053621:android:b1148a4c1b472189422cbc",
+        "mobilesdk_app_id": "1:303246847248:android:7a18420ecc4101eca40995",
         "android_client_info": {
           "package_name": "com.example.shop"
         }
@@ -35,7 +16,7 @@
       "oauth_client": [],
       "api_key": [
         {
-          "current_key": "AIzaSyBMe6BcWqJaaAfxr57_MaaXFzqMdVClP4c"
+          "current_key": "AIzaSyBFsb0wu3Q2j0E2OawIuDyUURK6s-VhzMg"
         }
       ],
       "services": {

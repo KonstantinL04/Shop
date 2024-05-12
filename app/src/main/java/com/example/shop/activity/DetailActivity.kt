@@ -1,5 +1,6 @@
 package com.example.shop.activity
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
@@ -73,15 +74,15 @@ class DetailActivity : BaseActivity() {
 
         binding.titleTxt.text = item.title
         binding.descriptionTxt.text = item.description
-        binding.priceTxt.text = "₽" + item.price
-        binding.ratingTxt.text = "${item.rating} Оценок"
+        binding.priceTxt.text = "${item.price}₽"
+        binding.ratingTxt.text = "${item.rating} Рейтинг"
         binding.addToCartBtn.setOnClickListener {
             item.numberInCart = number0der
             managmentCart.insertFood(item)
         }
         binding.backBtn.setOnClickListener { finish() }
         binding.cartBtn.setOnClickListener {
-
+            startActivity(Intent( this@DetailActivity, CartActivity::class.java))
         }
 
     }
