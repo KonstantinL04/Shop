@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:title="Главная"
+        android:id="@+id/homeBtn"
+        android:icon="@drawable/btn_1"
+        />
+    <item
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:title="Корзина"
+        android:id="@+id/cartBtn"
+        android:icon="@drawable/btn_2" />
+    <item
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:title="Избранное"
+        android:id="@+id/favoriteBtn"
+        android:icon="@drawable/btn_3"
+        />
+    <item
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:title="Заказы"
+        android:id="@+id/ordersBtn"
+        android:icon="@drawable/btn_4"
+        />
+    <item
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:title="Профиль"
+        android:id="@+id/profileBtn"
+        android:icon="@drawable/btn_5"
+        />
+</menu>
